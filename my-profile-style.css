@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: "Poppins", serif;
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+::selection{
+    color: #fff;
+    background-color: #601cfc;
+}
+
+header{
+    background-color: #f0f0f0;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 200px;
+    box-shadow: 0px -20px 26px 2px rgba(0, 0, 0, 0.3);
+
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    text-decoration: none;
+    font-size: 1.8em;
+    color: #3a6cf4;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+nav a{
+    color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+nav a:hover{
+    color: #601cfc;
+}
+
+section{
+    padding: 86px 160px;
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(freepik__the-style-is-3d-model-with-octane-render-volumetri__91321.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main h2{
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.main h2 span{
+    display: inline-block;
+    color: #3a6cf4;
+    font-size: 3em;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.main h3{
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.main-button{
+    color: #fff;
+    background-color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.5s ease;
+}
+
+.main-button:hover{
+    background-color: #2d1ff1;
+    transform: scale(1.1);
+}
+.social-icons a{
+    color: #eee;
+    font-size: 1.7em;
+    padding-right: 15px;
+
+}
+.social-icons{
+    margin-left: 20px;
+}
+
+#Services{
+    background-color: #f9f9f9;
+    box-shadow: 0px -20px 26px 2px rgba(0, 0, 0, 0.3);
+    min-height: 100vh;
+    max-height: 100%;
+
+}
+.Services-title{
+    width: fit-content;
+    color: #2d1ff1;
+    margin: auto;
+    font-size: 2.4em;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 120px 10px;
+    gap: 30px;
+}
+
+.card{
+    min-width: 300px;
+    max-width: 350px;
+    min-height: 400px;
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 15px;
+    transition: .5s ease;
+    box-shadow: 17px 20px 18px 12px rgba(0, 0, 0, 0.3);
+
+}
+
+.card:hover{
+    transform: translatey(-20px);
+    opacity: .8;
+}
+
+.card i{
+    color: #3a6cf4;
+    font-size: 3em;
+    margin-top: 14px;
+    margin-bottom: 30px;
+}
+
+.card h3{
+    color: #3a6cf4;
+    font-size: 2em;
+    margin-top: 16px;
+    margin-bottom: 20px;
+}
+
+.card p{
+    letter-spacing: .12px;
+    line-height: 30px;
+    font-weight: 600;
+    font-size: 1.4em;
+}
+
+#Projects{
+    background-color: #1495ff;
+    padding: 100px 200px;
+    min-height: 100vh;
+    max-height: fit-content;
+}
+
+.project-container{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    flex-wrap: wrap;
+    margin: 120px 10px;
+}
+
+.project-card{
+    min-width: 270px;
+    max-width: 300px;
+    min-height: 340px;
+    max-height: fit-content;
+    text-align: center;
+    background-color: #eee;
+    margin: 30px 30px;
+    padding: 20px;
+    border-radius: 15px;
+    transition: .5s ease;
+    box-shadow: 17px 20px 18px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+.project-card img{
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    transition: .2s ease;
+}
+
+.project-card img:hover{
+    opacity: .7;
+}
+
+.project-card p{
+    margin-top: 10px;
+}
+
+.project-card a{
+    display: block;
+    color: #eee;
+    background-color: #2d1ff1;
+    border-radius: 15px;
+    width: fit-content;
+    margin: 13px auto 5px;
+    padding: 15px;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: .5s ease;
+}
+.project-card a:hover{
+    transform: scale(1.1);
+}
+
+#Projects h2{
+    width: fit-content;
+    color: #fff;
+    margin: 0 auto;
+    font-size: 2.4em;
+}
+
+#Contact{
+    height: 100vh;
+}
+
+.moon{
+    color: #3a6cf4;
+    font-size: 1.8em;
+    transition: .5s;
+    text-align: center;
+}
+
+#Contact{
+    min-height: 100vh;
+    height: 100%;
+    background-color: #222222;
+
+}
+
+#Contact h2{
+    margin: 20px auto;
+    width: fit-content;
+    color: #fff;
+    font-size: 2.4em;
+    font-weight: 700;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 120px;
+    min-height: 300px;
+}
+.container a{
+    display: block;
+    border-radius: 10px;
+    border: 1px solid;
+    text-align: center;
+    text-decoration: none;
+    color: #222222;
+    padding: 20px;
+    background-color: #eee;
+    
+}
+
+.container a i{
+    color: #2d1ff1;
+    font-size: 4em;
+    padding: 20px 100px;
+}
+.container a p{
+    color: #222222;
+    font-size: 1.4em;
+    font-weight: 500;
+    padding: 20px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+footer p{
+    font-weight: 500;
+    font-size: 20px;
+}
+footer .social-icons-footer a{
+    display: inline-block;
+    color: #222222;
+    font-size: 1.7em;
+    padding: 20px 10px;
+}
+
+.social-icons-footer .c1{
+    color: #222222;
+}
+
+.social-icons-footer .c2{
+    color: #ff1b1b;
+}
+.social-icons-footer .c3{
+    color: #00ff2f;
+}
+.social-icons-footer .c4{
+    color: #026bff;
+}
+
+
